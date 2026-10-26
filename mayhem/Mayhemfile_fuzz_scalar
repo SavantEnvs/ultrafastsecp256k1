@@ -1,0 +1,9 @@
+project: savantenvs/ultrafastsecp256k1
+target: fuzz_scalar
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_scalar/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_scalar
+    libfuzzer: true
+    timeout: 30

@@ -1,0 +1,9 @@
+project: savantenvs/ultrafastsecp256k1
+target: fuzz_bip32_path
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_bip32_path/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_bip32_path
+    libfuzzer: true
+    timeout: 30

@@ -1,0 +1,9 @@
+project: savantenvs/ultrafastsecp256k1
+target: fuzz_schnorr_verify
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_schnorr_verify/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_schnorr_verify
+    libfuzzer: true
+    timeout: 30

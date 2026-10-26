@@ -1,0 +1,9 @@
+project: savantenvs/ultrafastsecp256k1
+target: fuzz_bip324_frame
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_bip324_frame/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_bip324_frame
+    libfuzzer: true
+    timeout: 30
