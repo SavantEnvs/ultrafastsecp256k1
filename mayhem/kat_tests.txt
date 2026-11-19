@@ -1,0 +1,7 @@
+test_exploit_schnorr_bip340_kat
+test_exploit_sha256_kat
+test_exploit_ecdsa_rfc6979_kat
+test_exploit_chacha20_kat
+test_exploit_hkdf_kat
+test_exploit_keccak256_kat
+test_exploit_ripemd160_kat
